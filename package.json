@@ -1,0 +1,27 @@
+{
+  "name": "@practo/manifest-revision-formatter-webpack",
+  "version": "1.0.0",
+  "description": "Overridden formatter fn. for manifest rev plugin available for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/practo/manifest-revision-formatter-webpack.git"
+  },
+  "keywords": [
+    "manifest",
+    "assets",
+    "webpack",
+    "plugin",
+    "format",
+    "revision"
+  ],
+  "author": "Deven Vyas <deven.vyas@practo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/practo/manifest-revision-formatter-webpack/issues"
+  },
+  "homepage": "https://github.com/practo/manifest-revision-formatter-webpack#readme"
+}
