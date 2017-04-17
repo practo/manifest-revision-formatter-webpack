@@ -3,6 +3,7 @@ Override the default formatter available in the plugin to output asset keys with
 
 # Usage
 ```
+const ManifestRevisionPlugin = require('manifest-revision-webpack-plugin');
 const manifestFormatter = require('@practo/manifest-revision-formatter-webpack');
 ...
 ...
