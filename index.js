@@ -31,6 +31,7 @@ function manifestFormatter(data, parsedAssets) {
     var assetsByChunkName = normalizeChunks();
 
     output.assets = parsedAssets;
+    output.scripts_map = {};
 
     for (chunk in assetsByChunkName) {
       for (asset in assetsByChunkName[chunk]) {
@@ -39,8 +40,12 @@ function manifestFormatter(data, parsedAssets) {
         fileName = asset.split('.')[0];
         chunkWithExtension = fileName + '.' + fileExtension;
 
-        if(chunkWithExtension.indexOf('map') < 0)
+        if(chunkWithExtension.indexOf('map') < 0) {
           output.assets[chunkWithExtension] = asset;
+          if(chunkWithExtension.indexOf('js') > 0) {
+            output.scripts_map[chunk] = asset;
+          }
+        }
       }
     }
 
